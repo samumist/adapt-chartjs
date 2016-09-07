@@ -19,6 +19,21 @@ define([
 
         postRender: function() {
             this.setupChart();
+            // Check if instruction or title or body is set, otherwise force completion
+            var cssSelector = this.$('.component-instruction').length > 0
+                ? '.component-instruction'
+                : (this.$('.component-title').length > 0
+                ? '.component-title'
+                : (this.$('.component-body').length > 0
+                ? '.component-body'
+                : null));
+
+            if (!cssSelector) {
+                this.setCompletionStatus();
+            } else {
+                this.model.set('cssSelector', cssSelector);
+                this.$(cssSelector).on('inview', _.bind(this.inview, this));
+            }
         },
 
 
@@ -59,7 +74,7 @@ define([
                 }
 
                 if (this._isVisibleTop && this._isVisibleBottom) {
-                    this.$('.component-inner').off('inview');
+                    this.$(this.model.get('cssSelector')).off('inview');
                     this.setCompletionStatus();
                 }
             }
