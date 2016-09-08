@@ -1,9 +1,5 @@
 <div class="chart-inner component-inner" role="region" aria-label="{{_globals._components._chart.ariaRegion}}" {{#if _globals._components._chart.ariaRegion}}tabindex="0"{{/if}}>
   {{> component this}}
   <canvas id="myChart{{_id}}" width="{{{_width}}}" height="{{{_height}}}" style="width: 100%; height: 100%;"></canvas>
-  {{#if data-source}}
-    <div class="chart-source">
-      {{{data-source}}}
-    </div>
-  {{/if}}
+  {{#if _data-source}} <div class="chart-source"> {{{_data-source}}} </div> {{/if}}
 </div>
