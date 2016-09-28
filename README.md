@@ -1,4 +1,5 @@
 # adapt-chart  
+This is a fork of [adapt-chartjs](http://github.com/dancgray/adapt-chartjs).
 
 
 ##Installation
