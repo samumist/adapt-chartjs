@@ -39,7 +39,7 @@
 			"text": "Custom Chart Title"
 		}
 	},
-	"_data-source": "Source: National Statistics 2016."
+	"_dataSrc": "Source: National Statistics 2016."
 }
 
 // line chart example
@@ -89,7 +89,7 @@
 			"text": "Custom Chart Title"
 		}
 	},
-	"_data-source": "Source: National Statistics 2016."
+	"_dataSrc": "Source: National Statistics 2016."
 }
 
 // radar chart example
@@ -136,7 +136,7 @@
 			"text": "Custom Chart Title"
 		}
 	},
-	"_data-source": "Source: National Statistics 2016."
+	"_dataSrc": "Source: National Statistics 2016."
 }
 
 // pie chart example
@@ -177,7 +177,7 @@
 			"text": "Custom Chart Title"
 		}
 	},
-	"_data-source": "Source: National Statistics 2016."
+	"_dataSrc": "Source: National Statistics 2016."
 }
 
 // doughnut chart example
@@ -218,6 +218,6 @@
 			"text": "Custom Chart Title"
 		}
 	},
-	"_data-source": "Source: National Statistics 2016."
+	"_dataSrc": "Source: National Statistics 2016."
 
 }
