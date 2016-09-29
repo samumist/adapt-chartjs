@@ -24,6 +24,7 @@
 			"type": "string",
 			"required": false,
 			"default": "",
+      "title": "提示信息",
 			"inputType": "Text",
 			"validators": [],
 			"help": "请在这里输入提示帮助信息"
@@ -32,7 +33,7 @@
 			"type": "string",
 			"required": true,
 			"default": "line",
-			"title": "Chart Type",
+			"title": "图表类型",
 			"enum": ["line", "bar", "radar", "pie", "doughnut"],
 			"inputType": {
 				"type": "Select",
@@ -45,7 +46,7 @@
 			"type": "number",
 			"required": true,
 			"default": 640,
-			"title": "Chart Width",
+			"title": "图表宽度",
 			"inputType": "Number",
 			"validators": ["required", "number"],
 			"help": "图表宽度（单位：像素）"
@@ -54,7 +55,7 @@
 			"type": "number",
 			"required": true,
 			"default": 480,
-			"title": "Chart Height",
+			"title": "图表高度",
 			"inputType": "Number",
 			"validators": ["required", "number"],
 			"help": "图表高度（单位：像素）"
@@ -63,7 +64,7 @@
 			"type": "object",
 			"required": false,
 			"default": {},
-			"title": "Data Sets",
+			"title": "数据",
 			"inputType": {
 				"type": "CodeEditor",
 				"mode": "json"
@@ -75,7 +76,7 @@
 			"type": "object",
 			"required": false,
 			"default": {},
-			"title": "Options",
+			"title": "图表选项",
 			"inputType": {
 				"type": "CodeEditor",
 				"mode": "json"
@@ -87,7 +88,7 @@
 			"type": "string",
 			"required": false,
 			"default": {},
-			"title": "Data Source",
+			"title": "数据来源",
 			"inputType": "Text",
 			"validators": [],
 			"help": "请在此输入数据来源",
