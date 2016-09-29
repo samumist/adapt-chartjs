@@ -2,7 +2,7 @@
     "name": "adapt-chartjs",
     "repository": "git://github.com/samumist/adapt-chartjs.git",
     "framework": "^2.0.0",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "homepage": "https://github.com/samumist/adapt-chartjs",
     "issues": "",
     "displayName": "Charts",
