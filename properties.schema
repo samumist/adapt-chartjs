@@ -1,98 +1,98 @@
 {
-	"type": "object",
-	"$schema": "http://json-schema.org/draft-04/schema",
-	"id": "http://jsonschema.net",
-	"$ref": "http://localhost/plugins/content/component/model.schema",
-	"globals": {
-		"ariaRegion": {
-			"type": "string",
-			"required": true,
-			"default": "这是一个图表组件",
-			"inputType": "Text",
-			"validators": []
-		}
-	},
-	"properties": {
-		"_supportedLayout": {
-			"type": "string",
-			"required": true,
-			"enum": ["full-width", "half-width", "both"],
-			"default": "both",
-			"editorOnly": true
-		},
-		"instruction": {
-			"type": "string",
-			"required": false,
-			"default": "",
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "$ref": "http://localhost/plugins/content/component/model.schema",
+  "globals": {
+    "ariaRegion": {
+      "type": "string",
+      "required": true,
+      "default": "这是一个图表组件",
+      "inputType": "Text",
+      "validators": []
+    }
+  },
+  "properties": {
+    "_supportedLayout": {
+      "type": "string",
+      "required": true,
+      "enum": ["full-width", "half-width", "both"],
+      "default": "both",
+      "editorOnly": true
+    },
+    "instruction": {
+      "type": "string",
+      "required": false,
+      "default": "提示帮助",
       "title": "提示信息",
-			"inputType": "Text",
-			"validators": [],
-			"help": "请在这里输入提示帮助信息"
-		},
-		"_chartType": {
-			"type": "string",
-			"required": true,
-			"default": "line",
-			"title": "图表类型",
-			"enum": ["line", "bar", "radar", "pie", "doughnut"],
-			"inputType": {
-				"type": "Select",
-				"options": ["line", "bar", "radar", "polarArea", "pie", "doughnut"]
-			},
-			"validators": [],
-			"help": "请选择图表类型"
-		},
-		"_width": {
-			"type": "number",
-			"required": true,
-			"default": 640,
-			"title": "图表宽度",
-			"inputType": "Number",
-			"validators": ["required", "number"],
-			"help": "图表宽度（单位：像素）"
-		},
-		"_height": {
-			"type": "number",
-			"required": true,
-			"default": 480,
-			"title": "图表高度",
-			"inputType": "Number",
-			"validators": ["required", "number"],
-			"help": "图表高度（单位：像素）"
-		},
-		"data": {
-			"type": "object",
-			"required": false,
-			"default": {},
-			"title": "数据",
-			"inputType": {
-				"type": "CodeEditor",
-				"mode": "json"
-			},
-			"validators": [],
-			"help": "请在这里输入图表数据"
-		},
-		"_options": {
-			"type": "object",
-			"required": false,
-			"default": {},
-			"title": "图表选项",
-			"inputType": {
-				"type": "CodeEditor",
-				"mode": "json"
-			},
-			"validators": [],
-			"help": "请在此输入其他图表设置，必须设置为Object"
-		},
-		"_dataSrc": {
-			"type": "string",
-			"required": false,
-			"default": {},
-			"title": "数据来源",
-			"inputType": "Text",
-			"validators": [],
-			"help": "请在此输入数据来源",
-			"translatable": true
-		}
-	}
+      "inputType": "Text",
+      "validators": [],
+      "help": "请在这里输入提示帮助、介绍信息"
+    },
+    "_chartType": {
+      "type": "string",
+      "required": true,
+      "default": "line",
+      "title": "图表类型",
+      "enum": ["line", "bar", "horizontalBar", "radar", "polarArea", "pie", "doughnut"],
+      "inputType": {
+        "type": "Select",
+        "options": ["line", "bar", "horizontalBar", "radar", "polarArea", "pie", "doughnut"]
+      },
+      "validators": [],
+      "help": "请选择图表类型。"
+    },
+    "_width": {
+      "type": "number",
+      "required": true,
+      "default": 640,
+      "title": "图表宽度",
+      "inputType": "Number",
+      "validators": ["required", "number"],
+      "help": "图表宽度（单位：像素）"
+    },
+    "_height": {
+      "type": "number",
+      "required": true,
+      "default": 480,
+      "title": "图表高度",
+      "inputType": "Number",
+      "validators": ["required", "number"],
+      "help": "图表高度（单位：像素）"
+    },
+    "data": {
+      "type": "object",
+      "required": false,
+      "default": {},
+      "title": "数据",
+      "inputType": {
+        "type": "CodeEditor",
+        "mode": "json"
+      },
+      "validators": [],
+      "help": "请在这里输入图表数据"
+    },
+    "_options": {
+      "type": "object",
+      "required": false,
+      "default": {},
+      "title": "图表选项",
+      "inputType": {
+        "type": "CodeEditor",
+        "mode": "json"
+      },
+      "validators": [],
+      "help": "请在此输入其他图表设置，必须设置为Object"
+    },
+    "_dataSrc": {
+      "type": "string",
+      "required": false,
+      "default": "",
+      "title": "数据来源",
+      "inputType": "Text",
+      "validators": [],
+      "help": "请在此输入数据来源",
+      "translatable": true
+    }
+  }
 }
