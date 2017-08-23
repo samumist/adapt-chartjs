@@ -23,7 +23,7 @@
     "instruction": {
       "type": "string",
       "required": false,
-      "default": "提示帮助",
+      "default": "",
       "title": "提示信息",
       "inputType": "Text",
       "validators": [],
