@@ -5,10 +5,10 @@
     "version": "2.0.0",
     "homepage": "https://github.com/samumist/adapt-chartjs",
     "issues": "",
-    "displayName": "图表组件",
+    "displayName": "Charts",
     "component": "chartjs",
     "assetFields": [],
-    "description": "使用chartjs Chart.js (http://www.chartjs.org/) 的图标组件。",
+    "description": "A chart component, using Chart.js (http://www.chartjs.org)",
     "main": "/js/adapt-chartjs.js",
     "keywords": [
         "adapt-plugin",

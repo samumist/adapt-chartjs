@@ -7,7 +7,7 @@
     "ariaRegion": {
       "type": "string",
       "required": true,
-      "default": "这是一个图表组件",
+      "default": "This is a charting component.",
       "inputType": "Text",
       "validators": []
     }
@@ -24,74 +24,73 @@
       "type": "string",
       "required": false,
       "default": "",
-      "title": "提示信息",
       "inputType": "Text",
       "validators": [],
-      "help": "请在这里输入提示帮助、介绍信息"
+      "help": "This is the instruction text"
     },
     "_chartType": {
       "type": "string",
       "required": true,
       "default": "line",
-      "title": "图表类型",
-      "enum": ["line", "bar", "horizontalBar", "radar", "polarArea", "pie", "doughnut"],
+      "title":"Chart Type",
+      "enum": ["line", "bar", "radar", "pie", "doughnut"],
       "inputType": {
         "type": "Select",
         "options": ["line", "bar", "horizontalBar", "radar", "polarArea", "pie", "doughnut"]
       },
       "validators": [],
-      "help": "请选择图表类型。"
+      "help": "Select the type of chart you want to use."
     },
     "_width": {
       "type": "number",
       "required": true,
       "default": 640,
-      "title": "图表宽度",
+      "title": "Chart Width",
       "inputType": "Number",
       "validators": ["required", "number"],
-      "help": "图表宽度（单位：像素）"
+      "help": "Chart width in pixels"
     },
     "_height": {
-      "type": "number",
-      "required": true,
-      "default": 480,
-      "title": "图表高度",
-      "inputType": "Number",
+      "type":"number",
+      "required":true,
+      "default":260,
+      "title": "Chart Height",
+      "inputType":"Number",
       "validators": ["required", "number"],
-      "help": "图表高度（单位：像素）"
+      "help": "Chart height in pixels"
     },
     "data": {
       "type": "object",
       "required": false,
       "default": {},
-      "title": "数据",
+      "title": "Data Sets",
       "inputType": {
         "type": "CodeEditor",
         "mode": "json"
       },
       "validators": [],
-      "help": "请在这里输入图表数据"
+      "help": "Enter your labels and data sets here"
     },
     "_options": {
       "type": "object",
       "required": false,
       "default": {},
-      "title": "图表选项",
+      "title": "Options",
       "inputType": {
         "type": "CodeEditor",
         "mode": "json"
       },
       "validators": [],
-      "help": "请在此输入其他图表设置，必须设置为Object"
+      "help": "Add custom options here. Options must be an object"
     },
     "_dataSrc": {
       "type": "string",
       "required": false,
       "default": "",
-      "title": "数据来源",
+      "title": "Data Source",
       "inputType": "Text",
       "validators": [],
-      "help": "请在此输入数据来源",
+      "help": "Add the data source here.",
       "translatable": true
     }
   }
